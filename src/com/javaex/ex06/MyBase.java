@@ -8,8 +8,11 @@ public class MyBase extends Base{
 	public void service(String state) {
 		if(state.equals("오후")) {
 			afternoon();
-		}else {
-			super.service(state);
+		}else if(state.equals("낮")){
+			System.out.println("낮에는 열심히 수업듣자");
+		}
+			{
+			super.service(state); 
 		}
 	}
 	
